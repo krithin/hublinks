@@ -1,6 +1,6 @@
 {
 	"name": "Linkify github",
-	"version": "0.1",
+	"version": "0.2",
 	"manifest_version": 2,
 	
 	"description": "Turns tokens in github source into links to definitions.",

@@ -1,0 +1,19 @@
+{
+	"name": "Linkify github",
+	"version": "0.1",
+	"manifest_version": 2,
+	
+	"description": "Turns tokens in github source into links to definitions.",
+		
+	"content_scripts": [
+		{
+			"matches": ["https://github.com/*"],
+			"css": ["linkify.css"],
+			"js": ["jquery-1.9.1.js", "linkify.js", "jquery.hoverIntent.minified.js"]
+		}
+	],
+	
+	"permissions": [
+		"https://107.21.173.36/*", "https://github.com/*", "https://raw.github.com/*"
+	]
+}

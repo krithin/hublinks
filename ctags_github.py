@@ -79,7 +79,6 @@ def get_repo_path(repo):
     return os.path.join(repositoryDir, p[1:])
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=80)
-
-def theapp(arg1, arg2):
-    app.run('0.0.0.0', port=80)
+    from gevent.pywsgi import WSGIServer
+    http_server = WSGIServer(('0.0.0.0', 80), app)
+    http_server.serve_forever()

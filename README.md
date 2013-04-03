@@ -7,14 +7,14 @@ Watch a demo:
 Hublinks is a Chrome extension that simplifies GitHub's source code browsing
 experience.  When you're reading unfamiliar code, you often need to look up the
 definitions of functions, classes, macros, global variables etc. that are
-defined in other files.  This is why offline IDEs and code editors have features
-that allow you to jump around within a project to definitions in other files.
-Hublinks brings this feature to your Github browsing: while looking at any
-source file in a Github repository, the extension makes every symbol in the file
-a clickable link to its definition (line, file) in the Github repository.
-Additionally, you sometimes just want a quick glance at a function signature, so
-if you hover over a symbol with a link, a pretty box pops up that displays a few
-lines of context from its definition.
+defined in other files.  This is why offline IDEs and code editors have
+features that allow you to jump around within a project to definitions in other
+files.  Hublinks brings this feature to your Github browsing: while looking at
+any source file in a Github repository, the extension makes every symbol in the
+file a clickable link to its definition (line, file) in the Github repository.
+Additionally, you sometimes just want a quick glance at a function signature,
+so if you hover over a symbol with a link, a pretty box pops up that displays a
+few lines of context from its definition.
 
 The task of finding symbol definitions is completely outsourced to [exuberant
 ctags](http://ctags.sourceforge.net/) and
@@ -22,6 +22,12 @@ ctags](http://ctags.sourceforge.net/) and
 miniscule Flask app that responds to requests from the extension. It git clones
 the HEAD of the repo, runs ctags, and then sends the useful parts of the ctags
 file back to the extension, which displays the results.
+
+## Usage
+
+Download the crx, put Chrome in developer mode, and add the extension through 
+the interface at chrome://extensions. Alternately, download the static folder
+and use it as an unpacked extension.
 
 ## Caveats
 

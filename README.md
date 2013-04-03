@@ -23,9 +23,16 @@ miniscule Flask app that responds to requests from the extension. It git clones
 the HEAD of the repo, runs ctags, and then sends the useful parts of the ctags
 file back to the extension, which displays the results.
 
-This is very much a hack: we don't do any authentication, so private
-repositories won't work. Additionally, we've observed it dying on large
-repositories, ie. don't try it on the jdk7 repository.  Finally, our server uses
-a self-signed certificate, so if you try to use the extension, you'll need to
-visit https://107.21.173.36/ and tell Chrome to accept the certificate before it
-will work.
+## Caveats
+
+This is very much a hack. We support exactly the languages supported by the
+Sourceforge release of exuberant ctags. We don't do anything smart about
+symbols with the same name and such, so a significant portion of the links are
+semantically "wrong" :). Fortunately, a even more significant majority of them
+turn out to be what you want them to be.
+
+We don't do any authentication, so private repositories won't work.
+Additionally, we've observed it dying on large repositories, ie. don't try it
+on the jdk7 repository.  Finally, our server uses a self-signed certificate, so
+if you try to use the extension, you'll need to visit https://107.21.173.36/
+and tell Chrome to accept the certificate before it will work.

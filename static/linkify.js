@@ -72,22 +72,23 @@ var gethovercontent = function(e, callback) {
 };
 
 var display_hover_content = function(e, lines) {
-    console.log(lines);
+    //console.log(lines);
     var newEl = '';
     for (var i = 0; i < lines.length; i++) {
 	    newEl += '<p>' + lines[i] + '</p>';
     }
 
     var el = document.createElement("div");
-    el.id = "popup";
+    el.id = "popup_" + e.target.innerHTML;
     el.innerHTML = "<pre>" +  newEl + "</pre>";
+    
     //el.title = newEl;
 
     document.body.appendChild(el);
     $(el).css({
         left: e.pageX + 20,
         top: e.pageY + 20,
-    });
+    }).addClass('hublinkspopup').addClass('js-directory-link').addClass('js-slide-to').addClass('css-truncate-target');
 };
 
 var hoverin = function(e) {
@@ -95,7 +96,7 @@ var hoverin = function(e) {
 };
 
 var hoverout = function(e) {
-	$('#popup').remove();
+	$('.hublinkspopup').remove();
 }
 	
 

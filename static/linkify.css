@@ -3,7 +3,7 @@ cursor: pointer;
         border-bottom: 1px dotted black;
 }
 
-#popup {
+.hublinkspopup {
     position: absolute;
     display: block;
     background-color: white;

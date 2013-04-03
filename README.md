@@ -1,7 +1,8 @@
 # Hublinks
 
-Why read the description when you can [watch a short
-demo](http://youtu.be/-Ncdiwa8plY)!
+Watch a demo:
+
+<a href="http://youtu.be/-Ncdiwa8plY"> <img src="https://raw.github.com/krithin/hublinks/master/static/screenshot.png" alt="watch a demo" height=400px></a>
 
 Hublinks is a Chrome extension that simplifies GitHub's source code browsing
 experience.  When you're reading unfamiliar code, you often need to look up the

@@ -19,7 +19,7 @@ and
 ## Usage
 
 Download the static.crx file and open it with Chrome to activate the extension, and 
-then open your favorite source file in a _public_ Github repository.
+then open your favorite source file in any _public_ Github repository.
 
 ## Bugs
 

@@ -19,7 +19,7 @@ and
 ## Usage
 
 BUG: First, visit https://107.21.173.36/ and tell Chrome to accept the certificate,
-b/c it's self-signed. Otherwise, it won't work.
+because it's self-signed. Otherwise, it won't work.
 
 Download the static.crx file and open it with Chrome to activate the extension, and 
 then open your favorite source file in any _public_ Github repository.
